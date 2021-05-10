@@ -1,24 +1,29 @@
 {
-  "automerge": false,
-  "docker": {
-    "major": {
-      "enabled": true
-    },
-    "pinDigests": true
-  },
-  "docker-compose": {
-    "fileMatch": ["(^|/)(stack|production)[^/]*\\.ya?ml$"]
-  },
-  "extends": [
-    "config:base",
-    ":semanticCommits",
-    ":semanticCommitTypeAll(chore)"
-  ],
-  "git-submodules": {
-    "enabled": true
-  },
-  "lockFileMaintenance": { "enabled": true },
-  "major": {
-    "automerge": false
-  }
+   "automerge":false,
+   "docker":{
+      "major":{
+         "enabled":true
+      },
+      "pinDigests":true
+   },
+   "docker-compose":{
+      "fileMatch":[
+         "(^|/)(stack|production)[^/]*\\.ya?ml$"
+      ]
+   },
+   "extends":[
+      "config:base",
+      "group:allNonMajor",
+      ":semanticCommitTypeAll(chore)"
+   ],
+   "git-submodules":{
+      "enabled":true
+   },
+   "meteor":{
+      "enabled":false
+   },
+   "rangeStrategy":"bump",
+   "npm":{
+      "commitMessageTopic":"{{prettyDepType}} {{depName}}"
+   }
 }
