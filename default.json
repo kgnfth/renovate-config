@@ -9,7 +9,10 @@
    "docker-compose":{
       "fileMatch":[
          "(^|/)(stack|production)[^/]*\\.ya?ml$"
-      ]
+      ],
+      "digest": {
+        "enabled": false
+      }
    },
    "extends":[
       "config:base",
