@@ -17,7 +17,7 @@
    "extends":[
       "config:base",
       "group:allNonMajor",
-      ":semanticCommitTypeAll"
+      ":semanticCommits"
    ],
    "git-submodules":{
       "enabled":true
