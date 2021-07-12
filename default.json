@@ -17,7 +17,7 @@
    "extends":[
       "config:base",
       "group:allNonMajor",
-      ":semanticCommitTypeAll(chore)"
+      ":semanticCommitTypeAll"
    ],
    "git-submodules":{
       "enabled":true
