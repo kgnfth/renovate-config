@@ -1,5 +1,4 @@
 {
-   "automerge":false,
    "docker":{
       "major":{
          "enabled":true
